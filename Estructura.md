@@ -29,4 +29,4 @@ Objetivo:
 ### [Parte 3: Programación del Scrpit de Python:](https://github.com/viowiy/redes_neuronales/blob/main/Parte3.md)
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
-# Final.
+[Regresar...](https://github.com/viowiy/redes_neuronales)
