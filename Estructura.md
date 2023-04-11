@@ -10,7 +10,7 @@ Objetivo:
 2. Desarrollo teórico de la red neuronal diseñada.
 3. Programación del Scrpit de Python.
 
-### Parte 1:Descripción del proyecto:
+### Parte 1: Descripción del proyecto:
 * Definición de red neuronal.
 * Ejemplos de aplicaciones y usos.
 * Planteamiento del problema.
@@ -28,6 +28,6 @@ Objetivo:
 
 ### Parte 3: Programación del Scrpit de Python.
 * Para derivar o hallar los máximos usar el resultado teórico.
-* * Tarea Final: Presentación ejecutiva (15 minutos).
+* Tarea Final: Presentación ejecutiva (15 minutos).
 
 # Final.
