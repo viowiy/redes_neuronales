@@ -18,9 +18,9 @@ Objetivo:
 * Elementos de álgebra lineal que intervienen en la creación de la red neuronal.
   1. Funciones de activación.
   2. Elementos de optimización.
-  3. Derivadas parciales.
-  4. Gradientes.
-  5. Función sigmoide.
+  4. Derivadas parciales.
+  5. Gradientes.
+  6. Función sigmoide.
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
 ### Parte 2: Desarrollo teórico de la red neuronal diseñada.
