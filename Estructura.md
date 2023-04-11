@@ -27,7 +27,6 @@ Objetivo:
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
 ### [Parte 3: Programación del Scrpit de Python:](https://github.com/viowiy/redes_neuronales/blob/main/Parte3.md)
-* Para derivar o hallar los máximos usar el resultado teórico.
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
 # Final.
