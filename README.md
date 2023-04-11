@@ -6,10 +6,10 @@ Este proyecto tiene como objetivo el desarrollo de una red neuronal sencilla con
 Creado como parte del curso propedéutico de la Maestría en Ciencia de Datos de la Universidad de Sonora (2023).
 
 Autores:
-- Ricardo Ortega Bolaños
+- Ricardo Ortega Bolaños.
 - Viowi Y. Cabrisas Amuedo.
 
 Para más información revisar Archivo [Estructura.md](https://github.com/viowiy/redes_neuronales/blob/main/Estructura.md)
 
 Se agradecería cualquier colaboración.
-Los Autores.
+Los autores.
