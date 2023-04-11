@@ -11,6 +11,7 @@ Las redes neuronales están presentes en varios casos de uso en muchos sectores,
 * Previsión de la carga eléctrica y la demanda de energía.
 * Proceso y control de calidad.
 * Identificación de compuestos químicos.[(4)](https://aws.amazon.com/es/what-is/neural-network/)
+
 En el presente proyecto los autores diseñan una red neuronal simple para el iagnóstico de cáncer de pulmón mediante la clasificación de imágenes médicas (Rx).
 ## Planteamiento del problema.
 Hasta 1791, el cáncer de pulmón no era considerado un padecimiento de importancia, pero en 1819 comenzaron a publicarse las características de esta enfermedad, que para entonces resultaba difícil distinguir de la tuberculosis. [(5)](http://scielo.sld.cu/pdf/san/v22n9/1029-3019-san-22-09-887.pdf)
