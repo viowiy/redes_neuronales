@@ -13,6 +13,14 @@ Las redes neuronales están presentes en varios casos de uso en muchos sectores,
 * Identificación de compuestos químicos.[cita](https://aws.amazon.com/es/what-is/neural-network/)
 En el presente proyecto los autores diseñan una red neuronal simple para el iagnóstico de cáncer de pulmón mediante la clasificación de imágenes médicas (Rx).
 ## Planteamiento del problema.
+Hasta 1791, el cáncer de pulmón no era considerado un padecimiento de importancia, pero en 1819 comenzaron a publicarse las características de esta enfermedad, que para entonces resultaba difícil distinguir de la tuberculosis.
+[](http://scielo.sld.cu/pdf/san/v22n9/1029-3019-san-22-09-887.pdf)
+[](http://scielo.sld.cu/pdf/rpr/v24n1/1561-3194-rpr-24-01-21.pdf)
+Se denomina como cáncer de pulmón a un conjunto de enfermedades resultantes del crecimiento anormal de células del tracto respiratorio, en particular del tejido pulmonar, y es uno de los tipos de neoplasias malignas más frecuentes a nivel mundial.
+[](http://scielo.sld.cu/pdf/san/v22n9/1029-3019-san-22-09-887.pdf)
+[](http://scielo.sld.cu/pdf/san/v24n3/1029-3019-san-24-03-431.pdf)
+El cáncer de pulmón es la principal causa de muerte por cáncer en todo el mundo, tanto en hombres como mujeres. El número de casos nuevos de cáncer de pulmón fue de 2 206 771 casos (11.4%), resultando el segundo más frecuente durante el 2020 y su prevalencia fue de unos 2 604 791 casos (5.2%), según la IARC. El número estimado de defunciones ese mismo año por cáncer de pulmón fue de 1 796 144, siendo el de mayor mortalidad y representando el 18% de las causas de muerte por cáncer.
+[](https://gco.iarc.fr/today/online-analysis-pie?v=2020&mode=cancer&mode_population=continents&population=900&populations=900&key=total&sex=0&cancer=39&type=0&statistic=5&prevalence=0&population_group=0&ages_group%5B%5D=0&ages_group%5B%5D=17&nb_items=7&group_cancer=1&include_nmsc=1&include_nmsc_other=1&half_pie=0&donut=0)
 
 ## Pipeline.
 ## Elementos de álgebra lineal que intervienen en la creación de la red neuronal.
