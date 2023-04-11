@@ -10,7 +10,7 @@ Objetivo:
 2. Desarrollo teórico de la red neuronal diseñada.
 3. Programación del Scrpit de Python.
 
-### [Parte 1: Descripción del proyecto:](https://github.com/viowiy/redes_neuronales/edit/main/Parte1.md)
+### [Parte 1: Descripción del proyecto:](https://github.com/viowiy/redes_neuronales/blob/main/Parte1.md)
 * Definición de red neuronal.
 * Ejemplos de aplicaciones y usos.
 * Planteamiento del problema.
@@ -23,10 +23,10 @@ Objetivo:
   6. Función sigmoide.
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
-### [Parte 2: Desarrollo teórico de la red neuronal diseñada:](https://github.com/viowiy/redes_neuronales/edit/main/Parte2.md)
+### [Parte 2: Desarrollo teórico de la red neuronal diseñada:](https://github.com/viowiy/redes_neuronales/blob/main/Parte2.md)
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
-### [Parte 3: Programación del Scrpit de Python:](https://github.com/viowiy/redes_neuronales/edit/main/Parte3.md)
+### [Parte 3: Programación del Scrpit de Python:](https://github.com/viowiy/redes_neuronales/blob/main/Parte3.md)
 * Para derivar o hallar los máximos usar el resultado teórico.
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
