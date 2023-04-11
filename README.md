@@ -1,8 +1,8 @@
-# Proyecto de Redes Neuronales (Matemáticas)
+# Proyecto de Redes Neuronales Artificiales (Curso de Matemáticas)
 
 [GitHub del Proyecto](https://github.com/viowiy/redes_neuronales.git)
 
-Este proyecto tiene como objetivo el desarrollo de una red neuronal sencilla con Python, sin hacer uso de librerías de terceros.
+Este proyecto tiene como objetivo el desarrollo de una red neuronal sencilla con Python desde cero (sin hacer uso de librerías de terceros).
 Creado como parte del curso propedéutico de la Maestría en Ciencia de Datos de la Universidad de Sonora (2023).
 
 Autores:
