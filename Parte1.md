@@ -32,3 +32,5 @@ Su diganóstico se puede realizar tanto a partir de estudios anatomopatológicos
   6. Función sigmoide.
 
 ## Tarea Final: Presentación ejecutiva (15 minutos).
+
+[Regresar...](https://github.com/viowiy/redes_neuronales/blob/main/Estructura.md)
