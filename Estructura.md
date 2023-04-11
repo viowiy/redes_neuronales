@@ -16,11 +16,11 @@ Objetivo:
 * Planteamiento del problema.
 * Pipeline.
 * Elementos de álgebra lineal que intervienen en la creación de la red neuronal.
-  + Funciones de activación.
-  + Elementos de optimización.
-- Derivadas parciales.
-- Gradientes.
-- Función sigmoide.
+  1. Funciones de activación.
+  2. Elementos de optimización.
+  3. Derivadas parciales.
+  4. Gradientes.
+  5. Función sigmoide.
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
 ### Parte 2: Desarrollo teórico de la red neuronal diseñada.
