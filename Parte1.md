@@ -22,6 +22,7 @@ Se denomina como cáncer de pulmón a un conjunto de enfermedades resultantes de
 El cáncer de pulmón es la principal causa de muerte por cáncer en todo el mundo, tanto en hombres como mujeres. El número de casos nuevos de cáncer de pulmón fue de 2 206 771 casos (11.4%), resultando el segundo más frecuente durante el 2020 y su prevalencia fue de unos 2 604 791 casos (5.2%), según la IARC. El número estimado de defunciones ese mismo año por cáncer de pulmón fue de 1 796 144, siendo el de mayor mortalidad y representando el 18% de las causas de muerte por cáncer.
 [](https://gco.iarc.fr/today/online-analysis-pie?v=2020&mode=cancer&mode_population=continents&population=900&populations=900&key=total&sex=0&cancer=39&type=0&statistic=5&prevalence=0&population_group=0&ages_group%5B%5D=0&ages_group%5B%5D=17&nb_items=7&group_cancer=1&include_nmsc=1&include_nmsc_other=1&half_pie=0&donut=0)
 
+Su diganóstico se puede realizar tanto a partir de estudios anatomopatológicos como radiológicos, siendo de gran importancia el uso de imágenes de Rx y TAC para el mismo. El control del cáncer de pulmón es un problema que amerita una solución rápida. Todo lo mencionado llevó a los autores a plantearse la creación de una red neuronal con Python para la clasificiación de imágenes de Rx y realizar un diagnóstico precoz del cáncer de pulmón.
 ## Pipeline.
 ## Elementos de álgebra lineal que intervienen en la creación de la red neuronal.
   1. Funciones de activación.
