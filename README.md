@@ -9,7 +9,7 @@ Autores:
 - Ricardo Ortega
 - Viowi Y. Cabrisas Amuedo.
 
-Para más información revisar Archivo Estructura.md
+Para más información revisar Archivo [Estructura.md](https://github.com/viowiy/redes_neuronales/blob/main/Estructura.md)
 
 Se agradecería cualquier colaboración.
 Los Autores.
