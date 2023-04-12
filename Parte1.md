@@ -5,10 +5,11 @@ Las redes neuronales son modelos computacionales —inspirados en las neuronas q
 
 Las redes neuronales pueden ayudar a las computadoras a tomar decisiones inteligentes con asistencia humana limitada. Esto se debe a que pueden *aprender* y modelar las relaciones entre los datos de entrada y salida [[3]](https://aws.amazon.com/es/what-is/neural-network/). Una red neuronal puede *aprender* o entrenarse a partir de datos de entrada mediante un ajuste de los pesos de las conexiones entre ellas.
 
-![<img src="https://ml4a.github.io/images/neuron-anatomy.jpg" width="400" alt="Imagen 1">](https://ml4a.github.io/images/neuron-anatomy.jpg)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![<img src="https://ml4a.github.io/images/neuron-simple.jpg" width="300" alt="Imagen 1b">](https://ml4a.github.io/images/neuron-simple.jpg)
+![<img src="https://ml4a.github.io/images/neuron-anatomy.jpg" width="400" alt="Imagen 1">](https://ml4a.github.io/images/neuron-anatomy.jpg)
+Imagen 1a. Representación de una neurona biológica [[4]](https://ml4a.github.io/images/neuron-anatomy.jpg).
 
-Imagen 1a. Representación de una neurona biológica [[4]](https://ml4a.github.io/images/neuron-anatomy.jpg). &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Imagen 1b. Simplificación de una neurona biológica [[4]](https://ml4a.github.io/images/neuron-simple.jpg).
+![<img src="https://ml4a.github.io/images/neuron-simple.jpg" width="300" alt="Imagen 1b">](https://ml4a.github.io/images/neuron-simple.jpg)
+Imagen 1b. Simplificación de una neurona biológica [[4]](https://ml4a.github.io/images/neuron-simple.jpg).
 
 
 ## Pipeline
@@ -30,7 +31,7 @@ Las capas ocultas toman su entrada de la capa de entrada o de otras capas oculta
 **Capa de Salida:**
 Proporciona el resultado final de todo el procesamiento de datos. Puede tener una o varias neuronas. Por ejemplo, en un problema de clasificación binaria (0/1), la capa de salida tendrá una neurona de salida que dará como resultado 1 o 0. Sin embargo, si es un problema de clasificación multiclase, la capa de salida puede tener más de una neurona de salida [[19]](https://aws.amazon.com/es/what-is/neural-network/).
 
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*v88ySSMr7JLaIBjwr4chTw.jpeg" width="550" alt="Imagen 3">
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*v88ySSMr7JLaIBjwr4chTw.jpeg" width="600" alt="Imagen 3">
 
 Imagen 3. Estructura del perceptrón o neurona artificial [[6]](https://miro.medium.com/v2/resize:fit:720/format:webp/1*v88ySSMr7JLaIBjwr4chTw.jpeg).
 
@@ -39,22 +40,47 @@ Imagen 3. Estructura del perceptrón o neurona artificial [[6]](https://miro.med
 El proceso de entrenamiento de una red neuronal se divide en dos fases: Forward-propagation (propagación hacia adelante) y Back-propagation (propagación hacia atrás). Cada una con diferentes pasos, los cuales involucran variados componenentes matemáticos.
 
 #### Forward Propagation
+El forward propagation es donde los datos de entrada se alimentan a través de una red, en dirección hacia adelante, para generar una salida. Los datos son aceptados por capas ocultas y procesados, según la función de activación , y pasan a la capa sucesiva. En este proceso se cálculan y almacenan las variables intermedias (incluidas las salidas $\hat{y}$) para cada neurona de las capas (desde la capa de entrada hasta la capa de salida) [[22]](https://d2l.ai/chapter_multilayer-perceptrons/backprop.html)[[23]](https://h2o.ai/wiki/forward-propagation/#:~:text=Forward%20propagation%20is%20where%20input,moves%20to%20the%20successive%20layer.).
 
-#### Back Propagation
+Se llevan a cabo dos pasos en este proceso:
+- **Preactivación:** suma ponderada de entradas, es decir, la transformación lineal de pesos en relación con las entradas disponibles. Con base en esta suma agregada y la función de activación, la neurona toma la decisión de pasar esta información más lejos o no [[24]](https://towardsdatascience.com/forward-propagation-in-neural-networks-simplified-math-and-code-version-bbcfef6f9250).
+
+$$\mathbf{z} = W^T X = \sum_{i=1}^{m}w_i x_i$$
+
+- **Activación:** la suma ponderada calculada de las entradas se pasa a la función de activación. Una función de activación es una función matemática que agrega no linealidad a la red [[24]](https://towardsdatascience.com/forward-propagation-in-neural-networks-simplified-math-and-code-version-bbcfef6f9250).
+
+$$\mathbf{a} = \sigma(z) = \dfrac{1}{1+e^{-z}}$$
+
+Por ultimo, se calcula el término de pérdida $J$ suponiendo que la función de pérdida (costo o error) es $l$, la etiqueta predicha es $\hat{y}$ (denotada como $a$ en la formula anterior) y la etiqueta verdadera es $y$.
+
+$$J(w) = l(\hat{y}, y)$$
+
+Se puede decir que una función de costo se usa para 'penalizar' al modelo cuando hace predicciones incorrectas.
+
+#### Backpropagation
+
+Se refiere al proceso de calcular el gradiente de los parámetros de la red neuronal. En resumen, el método atraviesa la red en orden inverso, desde la capa de salida a la de entrada, de acuerdo con la regla de la cadena del cálculo. El algoritmo almacena las variables intermedias (derivadas parciales) requeridas mientras calcula el gradiente con respecto a algunos parámetros [[22]](https://d2l.ai/chapter_multilayer-perceptrons/backprop.html).
+
+Es en esta fase donde se realiza el ajuste de los parametros de la red, se puede realizar utilizando el algoritmo de gradiente descendte, que se basa en la siguiente regla para actualizar iterativamente los pesos de cada perceptrón utilizando algún criterio o termino de perdida $J$.
+
+$$w(\tau) = w(\tau-1)-\eta \hspace{4pt} \triangledown J(w)$$
+
+Donde $\tau$ representa la iteración, $\eta$ es la tasa de aprendizaje, y $\triangledown J(w)$ representa la derivadas parciales con respecto a parametros $w$.
 
 ## Matemáticas utilizadas
-1. Algebra Lineal: operaciones entre matrices como producto punto, suma, etc...
-	* forward y back
-2. Transformaciones no Lineales: funciones de activación como ReLU o Sigmoide, etc...
-	* forward
-4. Derivadas Parciales: para calcular el gradiente de la función de pérdida...
-	* back
-5. Regla de la cadena: para calcular el gradiente de una función compuesta de varias capas...
-	* back
-6. Optimización: algoritmos de optimización como el descenso de gradiente estocástico (SGD)
-	* back
-7. Convoluciones: en redes neuronales convolucionales
-	* forward
+1. **Algebra Lineal:** operaciones entre matrices como producto punto, suma entre matrices o transformaciones como la matriz transpuesta (forward y back).
+
+2. **Transformaciones no Lineales:** funciones de activación como función RELU (Rectified Lineal Unit), Sigmoidal, Tangente Hiperbolica, Softmax o Leaky ReLU (forward).
+
+4. **Derivadas Parciales:** para calcular el gradiente de la función de pérdida, utilizadas en el algoritmo de gradiente descendente (back).
+
+5. **Regla de la cadena:** para calcular el gradiente de una función compuesta de varias capas (back).
+
+6. **Optimización:** algoritmos de optimización como el descenso de gradiente estocástico (back).
+
+7. **Convoluciones:** matriz de convolución usada en redes neuronales convolucionales CNN (forward).
+
+8. **Técnicas de Regularización**: algunas técnicas usadas en el tratamiento de datos o entre capas de la red, p. ej., L1/L2, decaimiento de los pesos (Weight Decay), Dropout, Batch Normalization, Normalización min-max o Z-Score.
 
 ## Ejemplos de aplicaciones y usos
 Las redes neuronales están presentes en nuestro día a día en muchos sectores, como los siguientes:
