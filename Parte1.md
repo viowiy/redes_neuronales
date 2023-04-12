@@ -1,4 +1,4 @@
-# Parte 1: Resumen Red Neuronal
+# 1. Resumen Red Neuronal
 
 ## Definición
 Las redes neuronales son modelos computacionales —inspirados en las neuronas que constituyen el cerebro (ver Imagen 1a y 1b)— y que dotan a los ordenadores de *Inteligencia* Artificial. Están formadas por unidades básicas llamadas neuronas o perceptrones (ver Imagen 3) que se conectan entre sí formando la red neuronal [[1]](https://enzyme.biz/blog/redes-neuronales-que-son-y-aplicaciones). El objetivo de la red neuronal es resolver los problemas de la misma manera que el cerebro humano, aunque las redes neuronales son más abstractas y su comparación sigue siendo muy distante. Al igual que las neuronas biológicas, los perceptrones están diseñados para tener dos salidas diferentes 1 o 0 (salida/no salida) [[2]](https://es.wikipedia.org/wiki/Red_neuronal_artificial).
