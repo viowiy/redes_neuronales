@@ -10,17 +10,16 @@ Objetivo:
 2. Desarrollo teórico de la red neuronal diseñada.
 3. Programación del Scrpit de Python.
 
-### [Parte 1: Descripción del proyecto:](https://github.com/viowiy/redes_neuronales/blob/main/Parte1.md)
-* Definición de red neuronal.
+### [Parte 1: Resumen Red Neuronal:](https://github.com/viowiy/redes_neuronales/blob/main/Parte1.md)
+* Definición.
+* Pipeline.
+  - Componentes.
+  - Entrenamiento y funcionamiento.
+      + Forward Propagation.
+      + Backpropagation.
+* Matemáticas utilizadas.
 * Ejemplos de aplicaciones y usos.
 * Planteamiento del problema.
-* Pipeline.
-* Elementos de álgebra lineal que intervienen en la creación de la red neuronal.
-  1. Funciones de activación.
-  2. Elementos de optimización.
-  4. Derivadas parciales.
-  5. Gradientes.
-  6. Función sigmoide.
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
 ### [Parte 2: Desarrollo teórico de la red neuronal diseñada:](https://github.com/viowiy/redes_neuronales/blob/main/Parte2.md)
