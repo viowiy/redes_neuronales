@@ -1,4 +1,4 @@
-# Resumen Red Neuronal
+# Parte 1: Resumen Red Neuronal
 
 ## Definición
 Las redes neuronales son modelos computacionales —inspirados en las neuronas que constituyen el cerebro (ver Imagen 1a y 1b)— y que dotan a los ordenadores de *Inteligencia* Artificial. Están formadas por unidades básicas llamadas neuronas o perceptrones (ver Imagen 3) que se conectan entre sí formando la red neuronal [[1]](https://enzyme.biz/blog/redes-neuronales-que-son-y-aplicaciones). El objetivo de la red neuronal es resolver los problemas de la misma manera que el cerebro humano, aunque las redes neuronales son más abstractas y su comparación sigue siendo muy distante. Al igual que las neuronas biológicas, los perceptrones están diseñados para tener dos salidas diferentes 1 o 0 (salida/no salida) [[2]](https://es.wikipedia.org/wiki/Red_neuronal_artificial).
@@ -36,7 +36,7 @@ Proporciona el resultado final de todo el procesamiento de datos. Puede tener un
 Imagen 3. Estructura del perceptrón o neurona artificial [[6]](https://miro.medium.com/v2/resize:fit:720/format:webp/1*v88ySSMr7JLaIBjwr4chTw.jpeg).
 
 
-### Entrenamiento y Funcionamiento
+### Entrenamiento y funcionamiento
 El proceso de entrenamiento de una red neuronal se divide en dos fases: Forward-propagation (propagación hacia adelante) y Back-propagation (propagación hacia atrás). Cada una con diferentes pasos, los cuales involucran variados componenentes matemáticos.
 
 #### Forward Propagation
@@ -114,3 +114,4 @@ El cáncer de mama es el tumor maligno más frecuente en el mundo y su investiga
 
 Su diagnóstico se basa en la obtención de los factores de riesgo, los hallazgos al examen físico, las pruebas de imágenes y exámenes anatomopatológicos, siendo de gran importancia el uso de datos clinicos de la masa, asi como Mamografías y TAC para realizar este diagnóstico. El control del cáncer de mama es un problema que amerita una solución rápida. Todo lo mencionado llevó a los autores a plantearse la creación de una red neuronal artificial con Python para la clasificación de tumores benignos o malignos en el seno mediante el usos de datos clinicos, y realizar un diagnóstico precoz del cáncer de mama.
 
+[Regresar...](https://github.com/viowiy/redes_neuronales/blob/main/Estructura.md)
