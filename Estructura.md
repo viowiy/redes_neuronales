@@ -22,7 +22,7 @@ Objetivo:
 * Planteamiento del problema.
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
-### [2. Desarrollo teórico de la red neuronal diseñada:](https://github.com/viowiy/redes_neuronales/blob/main/Parte2.md)
+### [2. Desarrollo teórico:](https://github.com/viowiy/redes_neuronales/blob/main/Parte2.md)
 * Tarea Final: Presentación ejecutiva (15 minutos).
 
 ### [3. Programación del Scrpit de Python:](https://github.com/viowiy/redes_neuronales/blob/main/Parte3.md)
