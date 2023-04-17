@@ -1,5 +1,5 @@
 
-# Desarrollo Teórico 
+# 2. Desarrollo Teórico 
 
 **Autores:**
 - Ricardo Ortega Bolaños.
@@ -14,29 +14,39 @@ Esta base de datos contiene 569 registros y 32 atributos, contando entre estos e
 
 De esos 30, se calculan diez características de valor real para cada núcleo celular en el estudio de Wisconsin, las cuales serán utilizadas en el presente trabajo:
 1. Radio: El radio de la célula fue medido promediando la longitud de los segmentos de líneas radiales definidos por el centroide de la célula y los puntos individuales en el límite de la célula. O sea, media de las distancias desde el centro a los puntos del perímetro).
-Fig. 1. Líneas radiales medidas en una célula.
-<img src="https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig01.png">
+
+    Fig. 1. Líneas radiales medidas en una célula.
+
+    <img src="https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig01.png?raw=true">
 
 2.	Textura: Fue medida encontrando la varianza en intensidades de escala de grises en los pixeles de la computadora.
-Fig. 2. Ejemplo de una imagen tomada por un sistema de visión por computadora y el contorno de la célula.
-<img src="[img](https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig02.png)">
+
+    Fig. 2. Ejemplo de una imagen tomada por un sistema de visión por computadora y el contorno de la célula.
+
+    <img src="https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig02.png?raw=true">
 
 3. Perímetro: Definido como la distancia total entre puntos individuales llamados puntos serpiente. Estos puntos individuales comprenden las líneas blancas en el perímetro de las células.
 4. Área: Se obtiene contando el número de pixeles en el interior de la línea blanca añadiendo la mitad de los pixeles en el perímetro.
 5. Suavidad: se calcula midiendo la diferencia entre la longitud de una línea radial y la longitud principal que la rodea. Básicamente, la suavidad es la variación local en las longitudes de radio.
 6. Compacidad: El perímetro y el área son combinados para calcular la medida de compacidad; la cual es una medida de forma. La compacidad está dada por la fórmula: (perímetro^2 / área - 1.0).
 7. Concavidad: Es la severidad de las porciones cóncavas del contorno. Analiza las irregularidades de forma en el núcleo de la célula. Se miden el número y la severidad de las concavidades y hendiduras en el núcleo de la célula. Se dibujan cuerdas entre cada punto blanco no adyacente y miden hasta qué punto el límite real del núcleo se encuentra en el interior de cada cuerda.
-Fig. 3. Cuerdas usadas para calcular la concavidad.
-<img src="[img](https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig03.png)">
+
+    Fig. 3. Cuerdas usadas para calcular la concavidad.
+
+    <img src="https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig03.png?raw=true">
 
 8. Puntos cóncavos: Usan una medida similar a la concavidad, pero esta característica solo mide el número de puntos cóncavos del contorno, más que la magnitud, de las concavidades del contorno.
 9. Simetría: Se obtiene encontrando la línea más larga que pase por el centro. Entonces, se trazan líneas perpendiculares a dicha línea para medir la diferencia de longitudes en las dos direcciones de la lineal central.
-Fig. 4. Segmentos usados en el cálculo de la simetría.
-<img src="[img](https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig04.png)">
+
+    Fig. 4. Segmentos usados en el cálculo de la simetría.
+
+    <img src="https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig04.png?raw=true">
 
 10.	Dimensión fractal: Es una característica de forma , es decir, a mayor valor corresponde a un menor contorno y por tanto a una mayor probabilidad malignidad. La dimensión fractal se aproxima usando la aproximación de costa de Mandelbrot ("aproximación de costa" - 1). El perímetro del núcleo es medido usando “reglas” cada vez más grandes. Esto es, a medida que aumenta el tamaño de la regla, decrece la precisión de la medición, el perímetro observado disminuye. Ahora, trazando estos valores a una escala logarítmica y medir la pendiente descendente da el negativo de una aproximación de la dimensión fractal.
-Fig. 5. Secuencia de medidas para calcular dimensión fractal.
-<img src="[img](https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig05.png)">
+
+    Fig. 5. Secuencia de medidas para calcular dimensión fractal.
+
+    <img src="https://github.com/viowiy/redes_neuronales/blob/main/images/morfometria_fig05.png?raw=true">
 
 Normalmente, la Selección de Subconjuntos de Características (FSS, por sus siglas en inglés: Feature Subset Selection) es usado para reducir la dimensionalidad, lo que significa que reduce el número de variables, atributos o características con las cuales se describen los objetos y encontrar su influencia en un problema. Este un método alternativo que inicia usando el conjunto de testores típicos, descartando características irrelevantes o redundantes.
 Los 20 atributos descartados hacían referencia al error estándar y valores mayores de cada uno de los 10 atributos reales calculados para cada núcleo celular, siendo descartados en el presente ejercicio para facilitar el entendimiento del modelo de clasificación elaborado y no afectar su precisión.
