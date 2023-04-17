@@ -198,16 +198,22 @@ Curva ROC
 ## Esquema general
 
 ## Precisión de la clasificación
+
 Utilización del teorema de Bayes en la interpretación de los resultados.
+
 PC= (TP + TN) / (TP + TN + FP + FN)
+
 Sensibilidad = TP / (TP + FN)
+
 Especificidad = TN / (TN + FP)
+
 Donde:
-•	PC: Precisión de la clasificación.
-•	TP: Total de casos positivos bien clasificados.
-•	TN: Total de casos negativos bien clasificados.
-•	FP: Falsos positivos. Cantidad de casos negativos clasificados como positivos.
-•	FN: Falsos negativos. Cantidad de casos positivos clasificados como negativos.
+* PC: Precisión de la clasificación.
+* TP: Total de casos positivos bien clasificados.
+* TN: Total de casos negativos bien clasificados.
+* FP: Falsos positivos. Cantidad de casos negativos clasificados como positivos.
+* FN: Falsos negativos. Cantidad de casos positivos clasificados como negativos.
+
 La sensibilidad caracteriza la capacidad de la prueba para detectar la enfermedad en sujetos enfermos. La especificidad indica la capacidad del estimador para dar como casos negativos, o sea, descartar la enfermedad en pacientes sanos.
 
 [Regresar...](https://github.com/viowiy/redes_neuronales/blob/main/Estructura.md)
