@@ -286,4 +286,12 @@ $$ F1= \dfrac{2 \cdot Recall \cdot Precision}{Recall \cdot Precision} $$
 
 ## Esquema general
 
+A continuación se presentan dos figuras juntando todo lo descrito anteriormente (de manera muy general).
 
+<img src="https://github.com/Ricardo-OB/redes_neuronales/blob/main/images/esquema_1.png?raw=true" width="1000">
+
+<center>Figura 12. Resumen de Red Neuronal con funciones de activación y notaciones.</center>
+
+<img src="https://github.com/Ricardo-OB/redes_neuronales/blob/main/images/esquema_2.png?raw=true" width="1000">
+
+<center>Figura 13. Esquema general de los procesos de la Red Neuronal.</center>
